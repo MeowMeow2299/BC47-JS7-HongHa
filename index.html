@@ -16,28 +16,26 @@
       crossorigin="anonymous" />
   </head>
   <body>
-    <div class="container py-5 my-2">
+    <div class="container py-5 my-5 p-10">
       <div class="row">
         <div class="mr-3">
           <div class="form-group">
-            <h2> Mảng 1</h2>
+            <h2>Mảng 1</h2>
             <p>Tổng số dương</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="ngay"
-              placeholder="Số" />
+            <input type="text" class="form-control" id="ngay" placeholder="" />
           </div>
-          <button onclick="ngayLuong()" class="btn btn-warning">Tính tổng</button>
+          <button onclick="ngayLuong()" class="btn btn-warning">
+            Tính tổng
+          </button>
           <div>Tổng số dương là: <span id="tienLuong"></span></div>
         </div>
         <div class="mr-3">
           <div class="form-group">
-            <h2> Mảng 2</h2>
+            <h2>Mảng 2</h2>
             <p>Đếm số dương</p>
             <p>Nhập số:</p>
-            <input type="text" class="form-control" id="n1" placeholder="Số" />
+            <input type="text" class="form-control" id="n1" placeholder="" />
           </div>
           <button onclick="trungbinhTong()" class="btn btn-warning">
             Thêm số
@@ -46,24 +44,24 @@
         </div>
         <div class="mr-3">
           <div class="form-group">
-            <h2> Mảng 3</h2>
-            <p>Tìm  số nhỏ nhất</p>
+            <h2>Mảng 3</h2>
+            <p>Tìm số nhỏ nhất</p>
             <p>Nhập số:</p>
             <input
               type="text"
               class="form-control"
               id="tienDo"
-              placeholder="Số" />
+              placeholder="" />
           </div>
-          <button onclick="quyDoi()" class="btn btn-warning">Tìm số nhỏ nhất</button>
+          <button onclick="quyDoi()" class="btn btn-warning">
+            Tìm số nhỏ nhất
+          </button>
           <div>Số nhỏ nhất: <span id="quydoiDo"></span></div>
         </div>
         <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 4</h2>
-            <p>
-              Tìm số dương nhỏ nhất
-            </p>
+            <p>Tìm số dương nhỏ nhất</p>
             <p>Nhập số:</p>
             <input
               type="text"
@@ -74,99 +72,77 @@
           <button onclick="tinhdienTich()" class="btn btn-warning">
             Tìm số dương nhỏ nhất
           </button>
-          <br/>
+          <br />
           <div>Số dương nhỏ nhất: <span id="soduongnhonhat"></span></div>
         </div>
 
         <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 5</h2>
-            <p>Tìm số chẵn  cuối cùng</p>
+            <p>Tìm số chẵn cuối cùng</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Số chẵn cuối cùng</button>
           <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
         </div>
 
-    <div class="mr-3">
+        <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 6</h2>
             <p>Đổi chỗ</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
-          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Đổi chỗ</button>
+          <div>Đổi chỗ: <span id="tongSo"></span></div>
         </div>
-    
-    <div class="mr-3">
+
+        <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 7</h2>
             <p>Sắp xếp tăng dần</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
-          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Sắp xếp tăng dần</button>
+          <div>Sắp xếp tăng dần: <span id="tongSo"></span></div>
         </div>
 
-    <div class="mr-3">
+        <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 8</h2>
             <p>Tìm số nguyên tố đầu tiên</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
-          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Số nguyên tố đầu tiên</button>
+          <div>Số nguyên tố đầu tiên: <span id="tongSo"></span></div>
         </div>
 
-    <div class="mr-3">
+        <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 9</h2>
             <p>Đếm số nguyên</p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
-          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Đếm số nguyên</button>
+          <div>Số nguyên: <span id="tongSo"></span></div>
         </div>
 
-    <div class="mr-3">
+        <div class="mr-3">
           <div class="form-group">
             <h2>Mảng 10</h2>
-            <p> So sánh số lượng <br/>
-              số âm và số dương</p>
+            <p>
+              So sánh số lượng <br />
+              số âm và số dương
+            </p>
             <p>Nhập số:</p>
-            <input
-              type="text"
-              class="form-control"
-              id="chuSo"
-              placeholder="Nhập 2 chữ số" />
+            <input type="text" class="form-control" id="chuSo" placeholder="" />
           </div>
-          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
-          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">So sánh</button>
+          <div>Kết quả so sánh: <span id="tongSo"></span></div>
         </div>
       </div>
     </div>
