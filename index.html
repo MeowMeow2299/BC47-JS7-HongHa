@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Buổi 7 - Hồng Hà</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container py-5 my-2">
+      <div class="row">
+        <div class="mr-3">
+          <div class="form-group">
+            <h2> Mảng 1</h2>
+            <p>Tổng số dương</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="ngay"
+              placeholder="Số" />
+          </div>
+          <button onclick="ngayLuong()" class="btn btn-warning">Tính tổng</button>
+          <div>Tổng số dương là: <span id="tienLuong"></span></div>
+        </div>
+        <div class="mr-3">
+          <div class="form-group">
+            <h2> Mảng 2</h2>
+            <p>Đếm số dương</p>
+            <p>Nhập số:</p>
+            <input type="text" class="form-control" id="n1" placeholder="Số" />
+          </div>
+          <button onclick="trungbinhTong()" class="btn btn-warning">
+            Thêm số
+          </button>
+          <div>Số dương: <span id="trungbinhTong"></span></div>
+        </div>
+        <div class="mr-3">
+          <div class="form-group">
+            <h2> Mảng 3</h2>
+            <p>Tìm  số nhỏ nhất</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="tienDo"
+              placeholder="Số" />
+          </div>
+          <button onclick="quyDoi()" class="btn btn-warning">Tìm số nhỏ nhất</button>
+          <div>Số nhỏ nhất: <span id="quydoiDo"></span></div>
+        </div>
+        <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 4</h2>
+            <p>
+              Tìm số dương nhỏ nhất
+            </p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chieuDai"
+              placeholder="" />
+          </div>
+          <button onclick="tinhdienTich()" class="btn btn-warning">
+            Tìm số dương nhỏ nhất
+          </button>
+          <br/>
+          <div>Số dương nhỏ nhất: <span id="soduongnhonhat"></span></div>
+        </div>
+
+        <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 5</h2>
+            <p>Tìm số chẵn  cuối cùng</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+
+    <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 6</h2>
+            <p>Đổi chỗ</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+    
+    <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 7</h2>
+            <p>Sắp xếp tăng dần</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+
+    <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 8</h2>
+            <p>Tìm số nguyên tố đầu tiên</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+
+    <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 9</h2>
+            <p>Đếm số nguyên</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+
+    <div class="mr-3">
+          <div class="form-group">
+            <h2>Mảng 10</h2>
+            <p> So sánh số lượng <br/>
+              số âm và số dương</p>
+            <p>Nhập số:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="chuSo"
+              placeholder="Nhập 2 chữ số" />
+          </div>
+          <button onclick="tonghaiSo()" class="btn btn-warning">Kết quả</button>
+          <div>Tổng 2 chữ số: <span id="tongSo"></span></div>
+        </div>
+      </div>
+    </div>
+    <!-- my javascript -->
+    <script src="./index.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
